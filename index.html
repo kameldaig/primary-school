@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مدرسة العقيد لطفي أولاد جلال</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="images/55.png" alt="شعار المدرسة" class="school-logo">
+                <div class="school-info">
+                    <h1>مدرسة العقيد لطفي الابتدائية</h1>
+                    <p class="school-motto">نحن نسعى لتوفير تعليم متميز لأبنائنا</p>
+                </div>
+            </div>
+            <style>
+                .school-logo {
+                    width: 100px; /* عرض اللوغو */
+                    height: auto;
+                    transition: transform 0.5s, box-shadow 0.5s;
+                }
+                .school-logo:hover {
+                    transform: scale(1.1); /* تكبير اللوغو عند التمرير */
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* تأثير ظل */
+                }
+            </style>
+            <nav>
+                <ul>
+                    <li><a href="#about">عن المدرسة</a></li>
+                    <li><a href="#programs">البرامج</a></li>
+                    <li><a href="#activities">الأنشطة</a></li>
+                    <li><a href="#students">التلاميذ</a></li>
+                    <li><a href="#library">المكتبة</a></li>
+                    <li><a href="#teachers">الأساتذة</a></li>
+                    <li><a href="#parents">الأولياء</a></li>
+                    <li><a href="#contact">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="slideshow" class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/1.jpg" alt="صورة 1">
+                <div class="slide-caption">صورة 1</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/2.jpg" alt="صورة 2">
+                <div class="slide-caption">صورة 2</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/3.jpg" alt="صورة 3">
+                <div class="slide-caption">صورة 3</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/4.jpg" alt="صورة 4">
+                <div class="slide-caption">صورة 4</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/5.jpg" alt="صورة 5">
+                <div class="slide-caption">صورة 5</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/6.jpg" alt="صورة 6">
+                <div class="slide-caption">صورة 6</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/7.jpg" alt="صورة 7">
+                <div class="slide-caption">صورة 7</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/8.jpg" alt="صورة 8">
+                <div class="slide-caption">صورة 8</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/9.jpg" alt="صورة 9">
+                <div class="slide-caption">صورة 9</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/10.jpg" alt="صورة 10">
+                <div class="slide-caption">صورة 10</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/11.jpg" alt="صورة 11">
+                <div class="slide-caption">صورة 11</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/12.jpg" alt="صورة 12">
+                <div class="slide-caption">صورة 12</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/13.jpg" alt="صورة 13">
+                <div class="slide-caption">صورة 13</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/14.jpg" alt="صورة 14">
+                <div class="slide-caption">صورة 14</div>
+            </div>
+            <div class="slide fade">
+                <img src="images/15.jpg" alt="صورة 15">
+                <div class="slide-caption">صورة 15</div>
+            </div>
+        </section>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = document.getElementsByClassName("slide");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 5000); // تغيير الصورة كل 5 ثواني
+            }
+        </script>
+
+        <section id="about" class="about">
+            <h2>عن المدرسة</h2>
+            
+            <!-- قسم خاص عن العقيد لطفي -->
+            <div class="colonel-lotfi">
+                <h3>العقيد لطفي - بطل الثورة الجزائرية</h3>
+                <img src="images/colonel-lotfi-portrait.jpg" alt="صورة العقيد لطفي" style="max-width: 300px; width: 100%; height: auto; border: 5px solid #ddd; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.2); margin: 20px auto; display: block;">
+                <div class="colonel-info" style="max-width: 800px; text-align: right;">
+                    <h4>من هو العقيد لطفي؟</h4>
+                    <p>العقيد لطفي، واسمه الحقيقي "عيسى بن عمار"، ولد في 16 فيفري 1934 بمدينة بسكرة. كان أحد أبرز قادة الثورة الجزائرية وأحد أبطال المنطقة السادسة التاريخية (الصحراء).</p>
+                    
+                    <h4>مسيرته النضالية</h4>
+                    <ul>
+                        <li>انضم إلى صفوف جيش التحرير الوطني في سن مبكرة</li>
+                        <li>تدرج في المناصب العسكرية حتى وصل إلى رتبة عقيد</li>
+                        <li>قاد العديد من العمليات العسكرية الناجحة ضد الاستعمار الفرنسي</li>
+                        <li>كان مسؤولاً عن المنطقة السادسة (الصحراء) في التنظيم العسكري للثورة</li>
+                    </ul>
+
+                    <h4>استشهاده</h4>
+                    <p>استشهد العقيد لطفي في 27 مارس 1960 في معركة بطولية بمنطقة جبال أولاد جلال، بعد أن قدم تضحيات جسيمة في سبيل تحرير الوطن.</p>
+
+                    <h4>إرثه</h4>
+                    <p>يعتبر العقيد لطفي رمزاً للتضحية والفداء في سبيل الوطن، وتم تسمية العديد من المؤسسات التعليمية والشوارع باسمه تخليداً لذكراه وتضحياته.</p>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-star-and-crescent"></i>
+                        <h3>رؤيتنا</h3>
+                        <p>تعليم متميز يجمع بين الأصالة والمعاصرة في إطار القيم الإسلامية، مع التركيز على تنمية المهارات الفكرية والاجتماعية والثقافية</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-mosque"></i>
+                        <h3>رسالتنا</h3>
+                        <p>تنشئة جيل متمسك بهويته الإسلامية ومتفوق في دراسته، مع تعزيز القيم الأخلاقية والاجتماعية والوطنية</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-kaaba"></i>
+                        <h3>قيمنا</h3>
+                        <p>الأمانة، الاحترام، التميز، الإبداع، والتعاون في إطار تعاليم ديننا الحنيف، مع التركيز على تنمية الشخصية والتفكير الناقد</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="naming-origin">
+                <h3>أصل التسمية</h3>
+                <div class="origin-content">
+                    <div class="origin-image">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="origin-text">
+                        <p>سُميت مدرستنا تيمناً باسم الشهيد البطل "العقيد لطفي" أحد رموز الثورة الجزائرية المجيدة. 
+                        ولد سنة 1934 في مدينة أولاد جلال، واسمه الحقيقي "عبد القادر لطفي". 
+                        التحق بصفوف جيش التحرير الوطني سنة 1955 وقاد العديد من العمليات العسكرية ضد المستعمر الفرنسي.
+                        استشهد في معركة بطولية سنة 1960، تاركاً إرثاً من البطولة والتضحية من أجل الوطن.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="programs" class="programs">
+            <h2>البرامج التعليمية</h2>
+            <div class="program-list">
+                <div class="program-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-quran"></i>
+                        <h3>التربية الإسلامية</h3>
+                        <p>تعليم القرآن الكريم والتربية الإسلامية وفق المنهج التربوي</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-language"></i>
+                        <h3>اللغة العربية</h3>
+                        <p>تعزيز مهارات اللغة العربية قراءة وكتابة ومحادثة</p>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-calculator"></i>
+                        <h3>العلوم والرياضيات</h3>
+                        <p>تطوير المهارات العلمية والرياضية بأساليب مبتكرة</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities" class="activities">
+            <h2>الأنشطة</h2>
+            <div class="activity-grid">
+                <div class="activity-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-book-open"></i>
+                        <h3>النشاط الثقافي</h3>
+                        <p>مسابقات في حفظ القرآن والحديث والشعر العربي</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-futbol"></i>
+                        <h3>النشاط الرياضي</h3>
+                        <p>ألعاب رياضية متنوعة تناسب المرحلة العمرية</p>
+                    </div>
+                </div>
+                <div class="activity-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-palette"></i>
+                        <h3>النشاط الفني</h3>
+                        <p>ورش فنية وأشغال يدوية تنمي المهارات الإبداعية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="students" class="students">
+            <h2>التلاميذ</h2>
+            <div class="students-grid">
+                <div class="student-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-users"></i>
+                        <h3>الحياة المدرسية</h3>
+                        <p>بيئة تعليمية محفزة تشجع على الإبداع والتفوق الدراسي</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-award"></i>
+                        <h3>التميز الأكاديمي</h3>
+                        <p>برامج تحفيزية ومسابقات لتشجيع التفوق والإبداع</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-heart"></i>
+                        <h3>الرعاية النفسية</h3>
+                        <p>متابعة نفسية وتربوية لضمان التوازن النفسي والعاطفي</p>
+                    </div>
+                </div>
+                <div class="student-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-star"></i>
+                        <h3>المواهب والهوايات</h3>
+                        <p>أنشطة متنوعة لاكتشاف وتنمية مواهب التلاميذ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="academic-excellence" class="academic-excellence">
+            <h2>التميز الأكاديمي</h2>
+            <div class="excellence-grid">
+                <div class="excellence-card">
+                    <h3>المسابقات</h3>
+                    <i class="fas fa-trophy" style="font-size: 50px; color: #FFC107;"></i>
+                    <p>تشارك المدرسة في العديد من المسابقات المحلية والدولية.</p>
+                </div>
+                <div class="excellence-card">
+                    <h3>النتائج المدرسية</h3>
+                    <i class="fas fa-chart-line" style="font-size: 50px; color: #4CAF50;"></i>
+                    <p>تحقق المدرسة نتائج متميزة في مختلف المواد الدراسية.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="school-life" class="school-life">
+            <h2>الحياة المدرسية</h2>
+            <div class="life-grid">
+                <div class="life-card">
+                    <h3>الإذاعة المدرسية</h3>
+                    <i class="fas fa-broadcast-tower" style="font-size: 50px; color: #4CAF50;"></i>
+                    <p>تساهم الإذاعة المدرسية في تعزيز الثقافة والمعرفة لدى الطلاب.</p>
+                </div>
+                <div class="life-card">
+                    <h3>المجلة المدرسية</h3>
+                    <i class="fas fa-newspaper" style="font-size: 50px; color: #2196F3;"></i>
+                    <p>تسجل المجلة المدرسية أنشطة الطلاب وتساهم في تطوير مهارات الكتابة.</p>
+                </div>
+                <div class="life-card">
+                    <h3>النوادي المدرسية</h3>
+                    <i class="fas fa-users" style="font-size: 50px; color: #FF9800;"></i>
+                    <p>تعمل النوادي المدرسية على تنمية المهارات الاجتماعية والفنية للطلاب.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="library" class="library">
+            <h2>المكتبة</h2>
+            <div class="library-content">
+                <div class="library-info">
+                    <div class="library-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-book"></i>
+                            <h3>الكتب المتوفرة</h3>
+                            <p>مجموعة متنوعة من الكتب التعليمية والقصص التربوية</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-laptop"></i>
+                            <h3>المكتبة الرقمية</h3>
+                            <p>موارد تعليمية رقمية وكتب إلكترونية تفاعلية</p>
+                        </div>
+                    </div>
+                    <div class="library-card">
+                        <div class="image-placeholder islamic-pattern">
+                            <i class="fas fa-clock"></i>
+                            <h3>أوقات الدوام</h3>
+                            <p>من الأحد إلى الخميس</p>
+                            <p>8:30 صباحاً - 3:30 مساءً</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-features">
+                    <div class="feature">
+                        <i class="fas fa-wifi"></i>
+                        <span>إنترنت مجاني</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-print"></i>
+                        <span>خدمة الطباعة</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-desktop"></i>
+                        <span>أجهزة حاسوب</span>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-chair"></i>
+                        <span>قاعة مطالعة</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="teachers" class="teachers">
+            <h2>الأساتذة</h2>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>كادر تعليمي متميز</h3>
+                        <p>نفخر بكادر تعليمي ذو خبرة وكفاءة عالية في التعليم الابتدائي</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-book-reader"></i>
+                        <h3>التطوير المهني</h3>
+                        <p>برامج تدريبية مستمرة لتطوير مهارات الأساتذة وفق المناهج التربوية الحديثة</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>القيم والأخلاق</h3>
+                        <p>تعزيز القيم الإسلامية والأخلاق الحميدة في العملية التعليمية</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="parents" class="parents">
+            <h2>أولياء الأمور</h2>
+            <div class="parents-grid">
+                <div class="parent-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-friends"></i>
+                        <h3>شراكة تربوية</h3>
+                        <p>نؤمن بأهمية التعاون بين المدرسة والأسرة في تربية أبنائنا</p>
+                    </div>
+                </div>
+                <div class="parent-card">
+                    <div class="image-placeholder">
+                        <i class="fas fa-comments"></i>
+                        <h3>تواصل مستمر</h3>
+                        <p>لقاءات دورية ومتابعة مستمرة لمستوى الطلاب</p>
+                    </div>
+                </div>
+                <div class="parent-card">
+                    <div class="image-placeholder islamic-pattern">
+                        <i class="fas fa-hands-helping"></i>
+                        <h3>مشاركة مجتمعية</h3>
+                        <p>فرص للمشاركة في الأنشطة المدرسية وخدمة المجتمع</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>اتصل بنا</h2>
+            <p>للاستفسارات، يرجى الاتصال على:</p>
+            <p><strong>الهاتف الثابت:</strong> 033667258</p>
+            <p><strong>الهاتف النقال:</strong> +213663513720</p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="image-placeholder">
+                            <i class="fas fa-envelope"></i>
+                            <h3>البريد الإلكتروني</h3>
+                            <p><a href="#" onclick="openEmailForm(); return false;">ecole.elakid@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="image-placeholder">
+                            <i class="fab fa-facebook"></i>
+                            <h3>صفحة الفيسبوك</h3>
+                            <p><a href="https://www.facebook.com/elakid.ecole.3" target="_blank">مدرسة العقيد لطفي</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="image-placeholder islamic-pattern">
+                            <i class="fas fa-clock"></i>
+                            <h3>أوقات الدوام</h3>
+                            <p>من الأحد إلى الخميس</p>
+                            <p>8:00 صباحاً - 4:00 مساءً</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- نموذج البريد المنبثق -->
+    <div id="emailFormModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeEmailForm()">&times;</span>
+            <h3>إرسال بريد إلكتروني</h3>
+            <form id="emailForm" onsubmit="sendEmail(event)" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">الاسم:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">بريدك الإلكتروني:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">الموضوع:</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">الرسالة:</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="attachments">المرفقات:</label>
+                    <div class="file-upload">
+                        <input type="file" id="attachments" name="attachments[]" multiple 
+                               accept=".jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.xls,.xlsx,.mp3,.mp4,.zip"
+                               onchange="validateFileSize(this)">
+                        <div class="file-info">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <span>اختر الملفات أو اسحبها هنا</span>
+                            <small>الحد الأقصى: 10 ميجابايت لكل ملف</small>
+                        </div>
+                    </div>
+                    <div id="fileList" class="file-list"></div>
+                </div>
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10 ميجابايت
+
+        function validateFileSize(input) {
+            const fileList = document.getElementById('fileList');
+            fileList.innerHTML = '';
+            
+            Array.from(input.files).forEach(file => {
+                const fileSize = file.size;
+                const fileSizeMB = (fileSize / (1024 * 1024)).toFixed(2);
+                
+                const fileItem = document.createElement('div');
+                fileItem.className = 'file-item';
+                
+                if (fileSize > MAX_FILE_SIZE) {
+                    fileItem.innerHTML = `
+                        <i class="fas fa-times-circle error"></i>
+                        <span class="error">${file.name} (${fileSizeMB} MB) - حجم الملف كبير جداً</span>
+                    `;
+                } else {
+                    fileItem.innerHTML = `
+                        <i class="fas fa-check-circle success"></i>
+                        <span>${file.name} (${fileSizeMB} MB)</span>
+                    `;
+                }
+                
+                fileList.appendChild(fileItem);
+            });
+        }
+
+        function sendEmail(event) {
+            event.preventDefault();
+            
+            // التحقق من حجم الملفات
+            const attachments = document.getElementById('attachments').files;
+            for (let file of attachments) {
+                if (file.size > MAX_FILE_SIZE) {
+                    alert('بعض الملفات تتجاوز الحد المسموح به (10 ميجابايت)');
+                    return;
+                }
+            }
+
+            // إنشاء FormData لإرسال البيانات والملفات
+            const formData = new FormData(event.target);
+            
+            // هنا يمكن إضافة كود لإرسال البيانات إلى خادم البريد الإلكتروني
+            // مثال: استخدام fetch للإرسال إلى API
+            alert('سيتم تنفيذ الإرسال عند ربط الخدمة بخادم البريد');
+            closeEmailForm();
+        }
+
+        function openEmailForm() {
+            document.getElementById('emailFormModal').style.display = 'block';
+        }
+
+        function closeEmailForm() {
+            document.getElementById('emailFormModal').style.display = 'none';
+            document.getElementById('emailForm').reset();
+            document.getElementById('fileList').innerHTML = '';
+        }
+
+        // إغلاق النموذج عند النقر خارجه
+        window.onclick = function(event) {
+            const modal = document.getElementById('emailFormModal');
+            if (event.target == modal) {
+                closeEmailForm();
+            }
+        }
+    </script>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © مدرسة العقيد لطفي أولاد جلال 2024</p>
+    </footer>
+</body>
+</html>
